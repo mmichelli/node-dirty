@@ -1,5 +1,5 @@
 require('../test/common');
-var db = require('dirty')(TEST_TMP+'/bob.dirty');
+var db = require('../lib/dirty')(TEST_TMP+'/bob.dirty');
 
 db.on('load', function() {
   db.set('john', {eyes: 'blue'});

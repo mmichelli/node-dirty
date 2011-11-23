@@ -1,7 +1,7 @@
 require('../common');
 var assert = require('assert');
 
-var dirty = require('dirty')('');
+var dirty = require(global.ROOT_LIB)('');
 var isLoaded = false;
 
 dirty.on('load', function() {

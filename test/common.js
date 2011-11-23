@@ -1,7 +1,9 @@
 var path = require('path'), fs = require('fs');
-require.paths.unshift(path.dirname(__dirname)+'/lib');
 
+global.ROOT_DIR = path.dirname(__dirname);
+global.ROOT_LIB  = path.join(global.ROOT_DIR, 'lib', 'dirty');
 global.TEST_TMP = path.join(__dirname, 'tmp');
+
 global.assert = require('assert');
 global.Gently = require('gently');
 global.GENTLY = new Gently();

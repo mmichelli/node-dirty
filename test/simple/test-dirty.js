@@ -1,5 +1,5 @@
 require('../common');
-var Dirty = require('dirty'),
+var Dirty = require(global.ROOT_LIB),
     EventEmitter = require('events').EventEmitter,
     dirtyLoad = Dirty.prototype._load,
     gently,

@@ -1,6 +1,6 @@
 require('../common');
-var DB_FILE = TEST_TMP+'/flush.dirty';
-    db = require('dirty')(DB_FILE),
+var DB_FILE = global.TEST_TMP+'/flush.dirty';
+    db = require(global.ROOT_LIB)(DB_FILE),
     fs = require('fs');
 
 db.set('foo', 'bar');
